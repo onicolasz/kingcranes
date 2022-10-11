@@ -1,0 +1,317 @@
+:root {
+  --primary: #fff;
+  --secondary: #95989a;
+  --text-color: #fff;
+  --text-secondary: #000;
+  --text-tertiary: #000;
+}
+
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+/* Event form */
+#header-apresentacao {
+  background: orangered;
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-color);
+}
+
+#apresentacao h2,
+#apresentacao .event-date {
+  color: var(--primary);
+}
+
+#apresentacao h2 {
+  font-size: 5em;
+  margin-bottom: 1em;
+}
+
+#apresentacao .apresentacao-texto {
+  font-size: 2em;
+  text-transform: uppercase;
+  max-width: 350px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+#apresentacao p {
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+#apresentacao .event-date {
+  font-weight: bold;
+}
+
+#key-contatos h2 {
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 2em;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.contatos {
+  display: flex;
+  justify-content: space-around;
+  padding: 4em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contatos {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20%;
+  color: var(--text-tertiary);
+}
+
+.contatos .contatos-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1em;
+}
+
+/* Event location */
+#local {
+  height: 400px;
+  background: orangered;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--text-color);
+  margin-bottom: 3em;
+}
+
+#endereco,
+#sobre-local{
+  max-width: 30%;
+}
+
+#endereco {
+  display: flex;
+}
+
+#endereco i {
+  color: var(--primary);
+  font-size: 2.5em;
+  margin-right: 1em;
+}
+
+#endereco-detalhes {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#sobre-local h3 {
+  color: var(--primary);
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+#sobre-local p {
+  line-height: 1.5em;
+}
+
+#servicos {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.servico {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5%;
+  margin-bottom: 4em;
+}
+
+.servico img {
+  width: 38%;
+  float:left;
+            box-shadow:10px 10px 10px gray;
+}
+
+.servico h3 {
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+#servico-1 h3 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.servico-descricao {
+  width: 100%;
+  padding-left: 2em;
+}
+
+#servico-3 .servico-descricao {
+  justify-self: flex-start;
+}
+
+.servico-descricao ul {
+  list-style-position: inside;
+}
+
+.servico-descricao ul li {
+  margin-bottom: 0.4em;
+}
+
+.servico-descricao ul li:last-child {
+  font-weight: bold;
+}
+
+li {
+  font-size: 1.5em;
+}
+
+video {
+  display: flex;
+  text-align: center;
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.video {
+  display: flex;
+  background-color: orangered;
+}
+/* Footer */
+#footer {
+  text-align: center;
+  color: var(--secondary);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#footer h3 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+#footer p:nth-child(2) {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+#footer span {
+  font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  #header-apresentacao {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #apresentacao {
+    padding: 2em;
+  }
+
+  #apresentacao h2 {
+    margin-bottom: 0.5em;
+  }
+
+  .contatos {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 2em;
+  }
+
+  .contatos {
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+
+  #local {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 2em 0;
+  }
+
+  #endereco {
+    order: 2;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  #endereco i {
+    margin: 0.3em 0;
+  }
+
+  #sobre-local {
+    order: 1;
+    max-width: 100%;
+  }
+
+  #sobre-local h3 {
+    margin-bottom: 0;
+  }
+
+  #sobre-local p {
+    display: flex;
+  }
+
+  .servico {
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    gap: 0;
+  }
+  .video {
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    gap: 0;
+  }
+  video {
+    width: 70%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .servico img {
+    width: 100%;
+    margin: 2em 0;
+  }
+
+  #servico-1 img {
+    display: flex;
+  }
+
+  .servico-descricao {
+    padding: 0;
+  }
+
+  #servico-3 img {
+    order: 2;
+  }
+
+  #servico-3 .servico-descricao {
+    order: 1;
+  }
+}
+
+
