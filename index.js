@@ -3,7 +3,6 @@ const app = express();
 const path = require('path');
 const router = express.Router();
 
-const port = process.env.port || 5000;
 
 app.use(express.static(__dirname + '/public'));
 
@@ -16,4 +15,8 @@ router.get('*', function(req, res){
 })
 
 app.use('/', router);
-app.listen(port);
+
+var port = process.env.PORT || 3000;
+app.listen(port, "0.0.0.0", function() {
+console.log("Listening on Port 3000");
+});
