@@ -12,25 +12,20 @@
   padding: 0;
 }
 
-/* Event form */
 #header-apresentacao {
   background: orangered;
   background-position: center;
   background-size: cover;
   height: 85vh;
-  display: flex;
+  display:flex;
   justify-content: space-around;
   align-items: center;
   color: var(--text-color);
 }
 
-#apresentacao h2,
-#apresentacao .event-date {
-  color: var(--primary);
-}
-
 #apresentacao h2 {
-  font-size: 5em;
+  color: var(--primary);
+  font-size: 4em;
   margin-bottom: 1em;
 }
 
@@ -85,7 +80,6 @@
   margin-bottom: 1em;
 }
 
-/* Event location */
 #local {
   height: 400px;
   background: orangered;
@@ -225,6 +219,12 @@ video {
   #header-apresentacao {
     flex-direction: column;
     height: auto;
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  #header-apresentacao img {
+    width: 100%;
   }
 
   #apresentacao {
@@ -233,6 +233,7 @@ video {
 
   #apresentacao h2 {
     margin-bottom: 0.5em;
+    position:relative;
   }
 
   .contatos {
@@ -262,6 +263,10 @@ video {
 
   #endereco i {
     margin: 0.3em 0;
+  }
+
+  #endereco iframe {
+    width: 100%;
   }
 
   #sobre-local {
